@@ -30,7 +30,7 @@ public class Order : BaseEntity, IUsesTimeStamps
 
     //also mockup as no event triggering is implemented at the moment.
     //But as it is used in the priority determination it is implemented as this mockup.
-    public DateTime DateCreated { get => DateTime.UtcNow; set => DateCreated = DateTime.UtcNow; }
-    public DateTime DateModified { get => DateTime.UtcNow; set => DateModified = DateTime.UtcNow; }
+    public DateTime DateCreated { get; }
+    public DateTime DateModified { get; }
 }
 
