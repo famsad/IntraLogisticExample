@@ -5,6 +5,7 @@ namespace IntraLogisticCodingExample.Warehouse.Entities
 {
     public class StockKeepingUnit : BaseEntity, IEntityInStorage, IUsesTimeStamps
     {
+    
         private readonly Location DefaultLocation;
         public StockKeepingUnit() => DefaultLocation = new();
 
@@ -25,7 +26,7 @@ namespace IntraLogisticCodingExample.Warehouse.Entities
 
         //also mockup as no event triggering is implemented at the moment.
         //But as it is used in the priority determination it is implemented as this mockup.
-        public DateTime DateCreated { get => DateTime.UtcNow; set => DateCreated = DateTime.UtcNow; }
-        public DateTime DateModified { get => DateTime.UtcNow; set => DateModified = DateTime.UtcNow; }
+        public DateTime DateCreated { get; }
+        public DateTime DateModified { get; }
     }
 }
