@@ -11,12 +11,12 @@ namespace IntraLogisticCodingExample.Warehouse.Entities
         /// <summary>
         /// DateTime of the creation of the Instance
         /// </summary>
-        public DateTime DateCreated { get; set; }
+        public DateTime DateCreated { get; }
 
         /// <summary>
         /// DateTime of the modification of the Instance
         /// </summary>
-        public DateTime DateModified { get; set; }
+        public DateTime DateModified { get; }
 
     }
 }
